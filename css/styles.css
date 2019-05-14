@@ -1,0 +1,38 @@
+/* Float the images in infobox right */
+img  {
+	float: right;
+	}
+/* Style the city and show json buttons */
+.myButton {
+	background-color: #4CAF50; /* Green */
+	border: none;
+	color: white;
+	padding: 10px 20px;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 12px;
+}
+
+/* If any button is clicked, modify it accordingly */
+.myButton:active {
+	background-color: white;
+	border: none;
+	color: black;
+	padding: 10px 20px;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 12px;
+}
+
+/* Style gps information so it is centered */
+#gpsLocation {
+	width:800px;
+	text-align: center;
+	padding-top:20px;
+	padding-bottom:20px;
+}
+/* Style Show json button so it is centered */
+#buttonWrapper {
+	width:800px;
+	text-align:center;
+}

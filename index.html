@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>000770411 GeoLocation Lab #1</title>
+        <meta http-equiv='Content-Type' content='text/html; charset=utf-8'/>
+		<!-- include CSS styles and jquery library -->
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+		<script src="js/jquery-1.10.0.js"></script>
+    </head>
+    <body>
+		<!-- container for the buttons for All and cities -->
+        <div id='cityButtons'>
+			<ul>
+				<li class="myButton" id="All">All</li>
+				<li class="myButton" id="City">Carlisle</li>
+				<li class="myButton" id="City">Hamilton</li>
+				<li class="myButton" id="City">Binbrook</li>
+				<li class="myButton" id="City">Dundas</li>
+				<li class="myButton" id="City">Ancaster</li>
+				<li class="myButton" id="City">Flamborough</li>
+				<li class="myButton" id="City">Stoney Creek</li>
+			</ul>
+		</div>
+		<!-- container for bing maps -->
+        <div id='myMap' style='width: 800px; height: 500px;'></div>
+		<!-- container for user gps location data -->
+		<div id="gpsLocation"></div>
+		<!-- wrapper for json show data button -->
+		<div id="buttonWrapper">
+			<div class="myButton" id="jsonButton">Show JSON Data</div>
+		</div>
+		<!-- Json data container that is filled by javascript -->
+		<pre id="jsonData"></pre>
+		<!-- main maps code that performs core functionality -->
+        <script type='text/javascript' src='js/maps.js'></script>
+        <script type='text/javascript' src='https://www.bing.com/api/maps/mapcontrol?key=Ak-JUwgsz1X2W1gUOhqr_S2unJ75nIc8NXZKSLz2qDkQg8NlXvvOAxUuswWph8lM&callback=loadMapScenario' async defer></script>
+    </body>
+</html>
+
+
